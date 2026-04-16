@@ -1,0 +1,41 @@
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+build/
+dist/
+
+# Outputs
+logs/
+results/
+outputs/
+
+# Data (expected to be prepared externally; scripts are tracked)
+data/_*/
+data/cceval/
+data/LCC_*/
+data/LongBench/
+data/**/*.parquet
+data/**/*.jsonl
+data/**/*.json
+
+# Model / cache artifacts
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.npz
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.nox/
+
+# Local env
+.env

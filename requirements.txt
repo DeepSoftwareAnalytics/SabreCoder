@@ -1,0 +1,31 @@
+# Install a CUDA-enabled PyTorch build separately, then install these packages.
+#
+# Example (CUDA 11.8):
+#   pip install --index-url https://download.pytorch.org/whl/cu118 torch
+#   pip install -r requirements.txt
+
+# Core runtime
+accelerate>=1.7.0
+numpy>=2.0.0
+pandas>=2.0.0
+pyarrow>=10.0.0
+rank-bm25>=0.2.2
+tqdm>=4.60.0
+transformers>=4.50.0
+
+# Evaluation helpers
+editdistance>=0.8.1
+fuzzywuzzy>=0.18.0
+nltk>=3.9.0
+prettytable>=3.10.0
+sacrebleu>=2.4.0
+timeout-decorator>=0.5.0
+
+# Parsing (semantic chunking / dependency extraction)
+tree-sitter==0.20.4
+tree-sitter-languages==1.10.2
+tree-sitter-java==0.23.5
+tree-sitter-c-sharp==0.23.1
+
+# Triton kernels
+triton>=3.3.0
